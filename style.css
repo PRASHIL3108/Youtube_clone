@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Inter:wght@400;600&family=Montserrat:wght@500&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(33,33,33) ;
+    color: white !important;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 15px;
+  }
+
+  main {
+    height: calc(100vh - 70px);
+    display: flex;
+  }
+
+  .side-bar {
+    height: 100%;
+    width: 17%;
+    overflow-y: hidden;
+  } 
+  /* Adding media queries for responsiveness */
+@media (max-width: 768px) {
+    .side-bar {
+      display: none;
+    }
+  }
+
+
+  .left {
+    display: flex;
+    align-items: center;
+   }
+   
+   .left #menu {
+    padding: 0 7px;
+    cursor: pointer;
+   }
+
+   .searchDiv {
+    display: flex;
+   }
+   
+   .searchDiv form {
+    display: flex;
+    border: 1px solid #ddd;
+    height: 45px;
+    border: none;
+   }
+
+   .searchDiv input {
+    width: 600px;
+    padding:10px 25px;
+    border: 0;
+    height: 100%;
+    border-radius: 2px 0 0 2px;
+    background-color: black !important;
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid #ddd;
+  }
+
+  .searchDiv button {
+    height: 100%;
+    width: 60px;
+    border: none;
+  }
+   
+  .mic {
+    margin-left:10px;
+  }
+
+  .material-icons {
+    color: rgb(100, 100, 100);
+    padding: 0 7px;
+    cursor: pointer;
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+  }
+  
+ .nav-link span {
+    margin-left: 15px;
+  }
+  
+ .nav-link:hover {
+    cursor: pointer;
+  }
+ 
+ .active, .active *{
+    background: rgb(48,48,48) !important;
+ }
+
+ hr {
+    height: 1px;
+    background-color: rgb(48,48,48) !important;
+    border: none;
+    margin-right: 20px;
+  }
+#subscriptionsHeading{
+  margin: 10px;
+  margin-left: 25px;
+  color: #AAAAAA !important;
+
+}
+  .content {
+    background-color: black !important;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+    box-sizing: border-box;
+
+  }
+  .topics{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    gap: 20px;
+    margin-top: 0px !important;
+    padding: 10px 20px;
+  }
+  .topics button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(100, 95, 95);
+    font-size: 18px;
+    white-space: nowrap;
+    width:  auto;
+  }
+  .active-topic{
+     background-color: white  !important;
+     color: black !important;
+  }
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 10px;
+    background-color: black;
+    padding-left: 20px;
+  }
+  
+
+  .video {
+    height: 350px;
+    display: flex;
+    flex-flow: column;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 5px 3px;
+  }
+  .video:hover {
+    transform: scale(1.05);
+  }
+  .thumbnail {
+    width: 100%;
+    height: 90%;
+  }
+  
+  .bottom-container {
+    display: flex;
+    gap: 20px;
+    background-color: black ;
+  }
+  .bottom-container *{
+    background-color: black;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .gray-text {
+    color: gray !important;
+    font-size: 14px;
+  }
+  .title-container {
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+  }
+  
+  .title {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+span{
+  font-size: 18px;
+}
+  @media (max-width: 768px) {
+    .side-bar {
+      display: none;
+    }
+    .searchDiv {
+      display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .searchDiv input {
+      width: 25rem;
+    }
+  }
+
+  .comment {
+    box-shadow: 2px 2px 4px rgba(202, 200, 200, 0.531);
+    padding: 10px 20px;
+  }
+  
+  .author-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }

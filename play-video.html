@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./play-video.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+        <div class="logo left">
+          <img src="./Images/Yt-Button.svg">
+        </div>
+        
+        <div class="searchDiv center">
+          <form action="">
+            <input id="searchInput" type="text" placeholder="Search" />
+            <button id="searchButton"><img src="./Images/SearchBox-Button.svg"></button>
+          </form>
+          <img class="mic" src="./Images/mic_icon.svg">
+        </div>
+        
+        <div class="icons right">
+          <i class="material-icons">videocam</i>
+          <i class="material-icons">apps</i>
+          <i class="material-icons">notifications</i>
+          <i class="material-icons display-this">account_circle</i>
+       </div>
+   </header>
+    <div id="video-placeholder"></div>
+
+    <div id="comments-container"></div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./play-video.js"></script>
+  </body>
+</html>

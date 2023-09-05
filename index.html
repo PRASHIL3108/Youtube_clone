@@ -1,0 +1,138 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Youtube Clone with HTML & CSS</title>
+  </head>
+  <body>
+    <header>
+        <div class="logo left">
+          <img src="./Images/Yt-Button.svg">
+        </div>
+        
+        <div class="searchDiv center">
+          <form action="">
+            <input id="searchInput" type="text" placeholder="Search" />
+            <button id="searchButton"><img src="./Images/SearchBox-Button.svg"></button>
+          </form>
+          <img class="mic" src="./Images/mic_icon.svg">
+        </div>
+        
+        <div class="icons right">
+          <i class="material-icons">videocam</i>
+          <i class="material-icons">apps</i>
+          <i class="material-icons">notifications</i>
+          <i class="material-icons display-this">account_circle</i>
+       </div>
+   </header>
+   <main id="main">
+        <div class="side-bar">
+            <div class="nav">
+              <a class="nav-link active">
+                <img src="./Images/home_icon.svg">
+                 <span>Home</span>
+              </a>
+              <a class="nav-link">
+                <img src="./Images/explore_icon.svg">
+                 <span>Explore</span>
+              </a>
+              <a class="nav-link">
+                <img src="./Images/subscription_icon.svg">
+                 <span>Subscriptions</span>
+              </a>
+              <hr>
+              <a class="nav-link">
+                <img src="./Images/library_icon.svg">
+                <span>Library</span>
+             </a>
+             <a class="nav-link">
+               <img src="./Images/history_icon.svg">
+                <span>History</span>
+             </a>
+             <a class="nav-link">
+               <img src="./Images/videos_icon.svg">
+                <span>Your Videos</span>
+             </a>
+             <a class="nav-link">
+               <img src="./Images/watch_later_icon.svg">
+                <span>Watch Later</span>
+             </a>
+             <a class="nav-link">
+               <img src="./Images/like_icon.svg">
+                <span>Liked Videos</span>
+             </a>
+             <a class="nav-link">
+               <img src="./Images/show_more_icon.svg">
+                <span>Show More</span>
+             </a>            
+             <hr>
+             <p id="subscriptionsHeading">Subscriptions</p>
+             <div class="subscriberNameDiv">
+
+             </div>
+             <a class="nav-link">
+               <img src="./Images/show_more_icon.svg">
+                <span>Show More</span>
+             </a>
+             <hr>
+             <a class="nav-link">
+               <img src="./Images/youtube_icon.svg">
+                <span>Youtube Premium</span>
+             </a>
+             <a class="nav-link">
+               <img src="./Images/gaming_icon.svg">
+                <span>Gaming</span>
+             </a>
+             <a class="nav-link">
+               <img src="./Images/live_icon.svg">
+                <span>Live</span>
+             </a>
+             <a class="nav-link">
+               <img src="./Images/show_more_icon.svg">
+                <span>Show More</span>
+             </a>
+             <a class="nav-link">
+               <img src="./Images/show_more_icon.svg">
+                <span>Show More</span>
+             </a>
+             <a class="nav-link">
+               <img src="./Images/show_more_icon.svg">
+                <span>Show More</span>
+             </a>
+            </div>
+            <hr>
+            </div>
+          <div class="content" id="contentContainer">
+              <div class="topics">
+                   <button class="active-topic">All</button>
+                   <button>News</button>
+                   <button>Music</button>
+                   <button>Computer Programming</button>
+                   <button>Mixes</button>
+                   <button>Diagram</button>
+                   <button>Wickets</button>
+                   <button>Podcast</button>
+                   <button>Seminars</button>
+                   <button>Comedy Clubs</button>
+                   <button>Live</button>
+                   <button>Comedy</button>
+                   <button>Recentl Uploaded</button>
+                   <button>Watched</button>
+                   <button>New to you</button>
+              </div>
+              <div class="videos" id="videosContainer">
+            
+             </div>
+          </div>
+
+      </main>
+      <script id="videoScript" src="https://www.youtube.com/iframe_api"></script>
+      <script src="./home.js"></script>
+  <!-- Main Body Ends -->
+</body>
+</html>
